@@ -1,6 +1,6 @@
 :root {
-	--main-color: var(--main-color);
-	--hover-btn-color: var(--hover-btn-color);
+	--main-color: #2C88CB;
+	--hover-btn-color: #FDC32F;
 }
 
 body {
@@ -225,4 +225,66 @@ main h3 {
 .about-featured {
 	color: var(--main-color);
 	font-weight: bold;
+}
+
+/* Skills box */
+.skills-box {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.skills-box h3 {
+	text-align: center;
+}
+
+.skills-box .hard-skills-box {
+	background-color: #fff;
+	height: 350px;
+	width: 49%;
+	float: left;
+}
+
+.skills-box .soft-skills-box {
+	background-color: #fff;
+	height: 350px;
+	width: 49%;
+	float: right;
+}
+
+.skills-box .label-bars-box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.skills-box .label-bars-box p {
+	width: 80%;
+	text-align: left;
+}
+
+.skills-box progress {
+  appearance: progress-bar;
+	-webkit-appearance: progress-bar;
+	width: 80%;
+	height: 10px;
+	border-radius: 20px;
+	border: 0;
+}
+
+.skills-box progress[value]::-webkit-progress-value {
+	background: linear-gradient(90deg, var(--main-color) 0%, #62BDFF 100%);
+	border-radius: 20px;
+}
+
+.skills-box progress[value]::-webkit-progress-bar {
+	background: #E7E7E7;
+	border-radius: 20px;
+}
+
+.skills-box progress::-moz-progress-bar  {
+	background: linear-gradient(90deg, var(--main-color) 0%, #62BDFF 100%);
+	border-radius: 20px;
 }
