@@ -86,11 +86,26 @@ header img {
 .headerbox-right .header-useful-links {
 	position: absolute;
 	top: 440px;
-	right: 1.5em;
+	right: 1em;
 	font-size: 0.9em;
 	font-weight: 400;
 	color: #fff;
-	padding: 1.5em;
+	padding: 2em;
+}
+
+.headerbox-right .useful-links {
+	position: absolute;
+	top: 510px;
+	right: 1em;
+	display: flex;
+	flex-flow: row wrap;
+  color: white;
+  font-size: 1.75em;
+}
+
+.headerbox-right .useful-links i:hover {
+  transition: all .3s;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 header nav {
@@ -241,6 +256,14 @@ main h3 {
 	text-align: center;
 }
 
+.skills-box .skill-underline {
+ 	position: relative;
+ 	top: 75px;
+ 	left: 51%;
+  width: 12%;
+  border-bottom: 2px solid var(--main-color);
+}
+
 .skills-box .hard-skills-box {
 	background-color: #fff;
 	height: 350px;
@@ -270,7 +293,7 @@ main h3 {
 
 .skills-box progress {
   appearance: progress-bar;
-  -webkit-appearance: progress-bar;
+	-webkit-appearance: progress-bar;
 	width: 80%;
 	height: 10px;
 	border-radius: 20px;
@@ -306,12 +329,15 @@ main h3 {
 	justify-content: space-around;
 }
 
+.portfolio-images div {
+	width: 32%;
+}
+
 .portfolio-images .img-box img:hover {
 	opacity: 0.3;
 }
 
 .portfolio-images .img-box {
-	width: 32%;
 	height: 100%;
 	background-color: #fff;
 	margin-bottom: 20px;
@@ -369,9 +395,28 @@ footer .contact-details {
 	background-color: var(--main-color);
 }
 
+footer .contact-details .contact-details-underline {
+	width: 45%;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+}
+
 footer .contact-details .contact-info {
 	position: relative;
-	top: 200px;
+	top: 150px;
+}
+
+footer .contact-details .footer-useful-links {
+	margin-top: 20px;
+	display: flex;
+	flex-flow: row wrap;
+    color: white;
+    font-size: 2em;
+}
+
+footer .contact-details .footer-useful-links i:hover {
+    transition: all .3s;
+    color: rgba(255, 255, 255, 0.3)
 }
 
 /* Contact Form */
@@ -420,7 +465,7 @@ footer .copyright-box {
 	}
 
 	header {
-		height: 560px;
+		height: 550px;
 		overflow: hidden;
 	}
 
@@ -562,7 +607,7 @@ footer .copyright-box {
 
 	footer .contact-details .contact-info {
 		position: relative;
-		top: 30px;
+		top: 15px;
 	}
 }
 
@@ -578,7 +623,7 @@ footer .copyright-box {
 	}
 
 	header {
-		height: 560px;
+		height: 490px;
 	}
 
 	.headerbox-left p {
@@ -686,6 +731,10 @@ footer .copyright-box {
 		transform: rotate(180deg);
 	}
 
+	.skills-box .skill-underline {
+	    width: 14%;
+	}
+
 	.portfolio-images div {
 		width: 90%;
 	}
@@ -716,7 +765,7 @@ footer .copyright-box {
 
 	footer .contact-details .contact-info {
 		position: relative;
-		top: 30px;
+		top: 15px;
 	}
 }
 
@@ -726,7 +775,6 @@ footer .copyright-box {
 	header nav ul {
 		flex-flow: column wrap;
 		align-items: flex-end;
-		/*justify-content: flex-end;*/
 	}
 
 	header nav ul li a {
@@ -789,6 +837,10 @@ footer .copyright-box {
 		transform: rotate(180deg);
 	}
 
+	.skills-box .skill-underline {
+	    width: 19%;
+	}
+
 	.portfolio-images div {
 		width: 48%;
 	}
@@ -819,7 +871,7 @@ footer .copyright-box {
 
 	footer .contact-details .contact-info {
 		position: relative;
-		top: 30px;
+		top: 15px;
 	}
 }
 
@@ -862,6 +914,10 @@ footer .copyright-box {
 		font-weight: bold;
 	}
 
+	.skills-box .skill-underline {
+	    width: 17%;
+	}
+
 	footer .contact-details {
 		font-size: 0.85em;
 	}
@@ -876,7 +932,7 @@ footer .copyright-box {
 
 	footer .contact-details .contact-info {
 		position: relative;
-		top: 100px;
+		top: 40px;
 	}
 }
 
@@ -915,6 +971,10 @@ footer .copyright-box {
 		font-weight: bold;
 	}
 
+	.skills-box .skill-underline {
+	    width: 13%;
+	}
+
 	footer .contact-details {
 		font-size: 0.85em;
 	}
@@ -929,7 +989,7 @@ footer .copyright-box {
 
 	footer .contact-details .contact-info {
 		position: relative;
-		top: 100px;
+		top: 70px;
 	}
 }
 

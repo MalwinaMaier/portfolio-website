@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Portfolio Website - HTML5, CSS3</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
 	<header>
@@ -20,14 +22,20 @@
 		<section class="headerbox-right">
 			<nav>
 				<ul>
-					<li><a href="" title="">About me</a></li>
-					<li><a href="" title="">Skills</a></li>
-					<li><a href="" title="">Portfolio</a></li>
-					<li><a href="" title="">Contact</a></li>
+					<li><a href="#about">About me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<p class="header-useful-links">Useful links</p>
+			<div class="header-useful-links">Useful links</div>
 			<span class="header-hr"></span>
+			<div class="useful-links">
+				<i class="demo-icon icon-twitter-circled"></i>  
+				<i class="icon-github-circled"></i>
+				<i class="icon-facebook-circled"></i>
+				<i class="icon-linkedin-circled"></i>
+			</div>
 		</section>
 	</header>
 	<main>
@@ -38,7 +46,7 @@
 				<button type="" class="btn-cv">Check my CV</button>
 			</div>
 		</section>
-		<section class="about-box">
+		<section class="about-box" id="about">
 			<h2>About me</h2>
 			<div class="about-txt-box">
 				<ul>
@@ -52,12 +60,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
 			</div>
 		</section>
-		<section class="skills-box">
+		<section class="skills-box" id="skills">
 			<h2>Skills</h2>
 
 			<section class="hard-skills-box">
+				<div class="skill-underline"></div>
 				<h3>Hard ones</h3>
-
+				
 				<div class="label-bars-box">
 					<p>html</p>
 					<progress value="80" max="100"></progress>
@@ -69,6 +78,7 @@
 			</section>
 
 			<section class="soft-skills-box">
+				<div class="skill-underline"></div>
 				<h3>Soft ones</h3>
 				<div class="label-bars-box">
 					<p>barking</p>
@@ -80,9 +90,9 @@
 				</div>
 			</section>
 		</section>
-		<section class="portfolio-box">
+		<section class="portfolio-box" id="portfolio">
 			<h2>Portfolio</h2>
-
+			
 			<section class="portfolio-images">
 				<div class="img-box box-shadow">
 					<img src="images/dog-portfolio.jpg" alt="Portfolio Dog">
@@ -124,15 +134,23 @@
 		</section>
 	</main>
 	<footer>
-		<section class="contact-box">
+		<section class="contact-box" id="contact">
 			<section class="contact-details box-shadow">
+				<div class="contact-details-underline"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut a harum quaerat error odio voluptate amet repudiandae quia porro culpa.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ex repellendus provident mollitia omnis quae assumenda, dignissimos, soluta officia harum quisquam!</p>
-				<p class="contact-info"><strong>Poland, Wrocław</strong><br />
+				<div class="contact-info"><strong>Poland, Wrocław</strong><br />
 				Psia 123, 00-001<br />
 				+48 123 456 789<br />
-				dog@dogie.com</p>
+				dog@dogie.com<br />
 
+				<div class="footer-useful-links">
+					<i class="demo-icon icon-twitter-circled"></i>  
+					<i class="icon-github-circled"></i>
+					<i class="icon-facebook-circled"></i>
+					<i class="icon-linkedin-circled"></i>
+				</div>
+			</div>
 			</section>
 			<section class="contact-form box-shadow">
 				<h3>Feel free to contact me!</h3>
