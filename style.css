@@ -10,6 +10,7 @@ body {
 	background-color: #F9F9F9;
 }
 
+/* Header */
 header {
 	height: 550px;
 	width: 100%;
@@ -95,6 +96,7 @@ header img {
 nav {
 	margin-top: 1.875em;
 }
+
 nav ul {
 	display: flex;
 	justify-content: flex-end;
@@ -107,4 +109,61 @@ nav ul li a {
 	font-size: 1.125em;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* Call to Action */
+.cta-box {
+	background-color: #fff;
+	width: 100%;
+	height: 220px;
+}
+
+.cta-txt {
+	position: relative;
+	top: 25px;
+	margin: 0 auto;
+	font-size: 2.25em;
+	text-align: center;
+}
+
+.btn-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 50px;
+}
+
+.btn-contact {
+	margin: 20px;
+	width: 200px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #2C88CB;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid #2C88CB;
+	box-sizing: border-box;
+}
+
+.btn-contact:hover{
+	background-color: #FDC32F;
+	border: 1px solid #FDC32F;
+}
+
+.btn-cv {
+	margin: 20px;
+	width: 200px;
+	height: 50px;
+	background-color: #fff;
+	font-weight: bold;
+	color: #2C88CB;
+	border-radius: 50px;
+	border: 1px solid #2C88CB;
+	box-sizing: border-box;
+}
+
+.btn-cv:hover {
+	color: #FDC32F;
+	border: 1px solid #FDC32F;
+
 }
