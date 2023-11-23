@@ -1,5 +1,6 @@
 :root {
-	--main-color: #318bcb;
+	--main-color: var(--main-color);
+	--hover-btn-color: var(--hover-btn-color);
 }
 
 body {
@@ -150,16 +151,16 @@ main h3 {
 	width: 200px;
 	height: 50px;
 	border-radius: 50px;
-	background-color: #2C88CB;
+	background-color: var(--main-color);
 	font-weight: bold;
 	color: #fff;
-	border: 1px solid #2C88CB;
+	border: 1px solid var(--main-color);
 	box-sizing: border-box;
 }
 
 .btn-contact:hover{
-	background-color: #FDC32F;
-	border: 1px solid #FDC32F;
+	background-color: var(--hover-btn-color);
+	border: 1px solid var(--hover-btn-color);
 }
 
 .btn-cv {
@@ -168,15 +169,15 @@ main h3 {
 	height: 50px;
 	background-color: #fff;
 	font-weight: bold;
-	color: #2C88CB;
+	color: var(--main-color);
 	border-radius: 50px;
-	border: 1px solid #2C88CB;
+	border: 1px solid var(--main-color);
 	box-sizing: border-box;
 }
 
 .btn-cv:hover {
-	color: #FDC32F;
-	border: 1px solid #FDC32F;
+	color: var(--hover-btn-color);
+	border: 1px solid var(--hover-btn-color);
 }
 
 /* About box */
@@ -205,7 +206,7 @@ main h3 {
 .about-txt-box .vertical-line {
 	width: 220px;
 	height: 0px;
-	border: 0.25px solid #2C88CB;
+	border: 0.25px solid var(--main-color);
 	transform: rotate(90deg);
 }
 
@@ -222,6 +223,6 @@ main h3 {
 }
 
 .about-featured {
-	color: #2C88CB;
+	color: var(--main-color);
 	font-weight: bold;
 }
