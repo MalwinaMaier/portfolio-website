@@ -33,6 +33,7 @@ h2 {
 header h2 span {
 	color: var(--main-color);
 }
+
 .headerbox-left {
 	padding: 100px;
 	width: 60%;
@@ -111,6 +112,17 @@ nav ul li a {
 	text-decoration: none;
 }
 
+/* Main headers */
+main h2 {
+	margin-top: 75px;
+	font-size: 2em;
+	text-align: center;
+}
+
+main h3 {
+	font-size: 2em;
+}
+
 /* Call to Action */
 .cta-box {
 	background-color: #fff;
@@ -165,5 +177,51 @@ nav ul li a {
 .btn-cv:hover {
 	color: #FDC32F;
 	border: 1px solid #FDC32F;
+}
 
+/* About box */
+.about-box {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.about-txt-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	background-color: #fff;
+	height: 275px;
+	padding: 25px 100px;
+}
+
+.about-txt-box ul {
+	width: 30%;
+	line-height: 40px;
+	list-style-type: none;
+}
+
+.about-txt-box .vertical-line {
+	width: 220px;
+	height: 0px;
+	border: 0.25px solid #2C88CB;
+	transform: rotate(90deg);
+}
+
+.about-txt-box p {
+	width: 70%;
+	font-size: 1em;
+	line-height: 31px;
+	letter-spacing: 0.04em;
+}
+
+.about-txt-box li {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.about-featured {
+	color: #2C88CB;
+	font-weight: bold;
 }
