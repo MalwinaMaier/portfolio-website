@@ -22,12 +22,12 @@ header {
 	display: flex;
 }
 
-h1 {
+header h1 {
 	font-size: 6em;
 	line-height: 0.2em;
 }
 
-h2 {
+header h2 {
 	font-size: 2.25em;
 }
 
@@ -95,25 +95,25 @@ header img {
 	padding: 1.5em;
 }
 
-nav {
+header nav {
 	margin-top: 1.875em;
 }
 
-nav ul {
+header nav ul {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: wrap;
 	list-style: none;
 }
 
-nav ul li a {
+header nav ul li a {
 	margin-right: 2.5em;
 	font-size: 1.125em;
 	color: #fff;
 	text-decoration: none;
 }
 
-/* Main headers */
+/* Main */
 main h2 {
 	margin-top: 75px;
 	font-size: 2em;
@@ -122,6 +122,12 @@ main h2 {
 
 main h3 {
 	font-size: 2em;
+}
+
+.box-shadow {
+	-webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Call to Action */
@@ -287,4 +293,48 @@ main h3 {
 .skills-box progress::-moz-progress-bar  {
 	background: linear-gradient(90deg, var(--main-color) 0%, #62BDFF 100%);
 	border-radius: 20px;
+}
+
+/* Portfolio box */
+.portfolio-box {
+	display: inline-block;
+	width: 100%;
+}
+
+.portfolio-images {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.portfolio-images div {
+	width: 32%;
+	height: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.portfolio-images h4 {
+	font-weight: bold;
+	font-size: 1.125em;
+	margin-bottom: 0;
+	padding: 0 10px;
+}
+
+.portfolio-images .portfolio-website {
+	color: var(--main-color);
+	font-weight: bold;
+	font-size: 0.875em;
+	padding: 0 10px;
+}
+
+.portfolio-images .portfolio-shorttxt {
+	color: #A0A0A0;
+	font-size: 0.875em;
+	padding: 0 10px;
+}
+.portfolio-images div img {
+	width: 100%;
 }
