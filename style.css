@@ -1,7 +1,110 @@
+:root {
+	--main-color: #318bcb;
+}
+
 body {
 	font-family: 'Ubuntu', sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	background-color: #F9F9F9;
+}
+
+header {
+	height: 550px;
+	width: 100%;
+	background-image: url('images/header-background.jpg');
+}
+
+header {
+	display: flex;
+}
+
+h1 {
+	font-size: 6em;
+	line-height: 0.2em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+header h2 span {
+	color: var(--main-color);
+}
+.headerbox-left {
+	padding: 100px;
+	width: 60%;
+	height: 100%;
+	background-color: #fff;
+	opacity: .80;
+	box-sizing: border-box;
+}
+
+.headerbox-left p {
+	font-size: 1.125em;
+}
+
+.rounded-image {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+header img {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	max-height: 250px;
+	height: auto;
+	max-width: 250px;
+	width: auto;
+	opacity: 1;
+	z-index: 1;
+	-webkit-box-shadow: 5px 5px 15px 1px rgba(176,176,176,1);
+	-moz-box-shadow: 5px 5px 15px 1px rgba(176,176,176,1);
+	box-shadow: 5px 5px 15px 1px rgba(176,176,176,1);
+}
+
+.headerbox-right {
+	width: 40%;
+	height: 100%;
+	background-color: rgba(44, 136, 203, 0.95);
+	font-weight: bold;
+}
+
+.headerbox-right .header-hr {
+	position: absolute;
+	width: 100px;
+	height: 0px;
+	right: 2.5em;
+	top: 500px;
+	border: 1px solid #fff;
+}
+
+.headerbox-right .header-useful-links {
+	position: absolute;
+	top: 440px;
+	right: 1.5em;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: #fff;
+	padding: 1.5em;
+}
+
+nav {
+	margin-top: 1.875em;
+}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+nav ul li a {
+	margin-right: 2.5em;
+	font-size: 1.125em;
+	color: #fff;
+	text-decoration: none;
 }
