@@ -346,7 +346,7 @@ footer {
 	flex-flow: column nowrap;
 	width: 100%;
 	background-color: #FFFFFF;
-	height: 600px;
+  height: 100%;
 	padding: 50px 0;
 }
 
@@ -356,8 +356,7 @@ footer .contact-box {
 	width: 90%;
 	padding: 25px;
 	margin: 0 auto;
-	display: flex;
-	flex-flow: row wrap;
+  box-sizing: border-box;
 }
 
 /* Contact Details */
@@ -407,4 +406,392 @@ footer .copyright-box {
 	text-align: center;
 	color: #A0A0A0;
 	font-size: 0.875em;
+}
+
+@media only screen and (min-width: 1600px) {
+	header img {
+		left:  53%;
+	}
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1599px) {
+	header img {
+		left:  52%;
+	}
+
+	header h1 {
+		font-size: 5em;
+	}
+
+	header h2 {
+		font-size: 2em;
+	}
+
+	.headerbox-left p {
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+	header img {
+		left:  49%;
+		max-height: 250px;
+		max-width: 250px;
+	}
+
+	header nav ul li a {
+		font-size: 1em;
+	}
+
+	header h1 {
+		font-size: 4em;
+	}
+
+	header h2 {
+		font-size: 1.75em;
+	}
+
+	.headerbox-left p {
+		font-size: 1em;
+	}
+
+	.about-txt-box p {
+		width: 70%;
+		font-size: 0.85em;
+		line-height: 31px;
+		letter-spacing: 0.04em;
+	}
+
+	.about-txt-box li {
+		font-size: 0.85em;
+		font-weight: bold;
+	}
+
+	footer .contact-details {
+		font-size: 0.85em;
+	}
+
+	footer h3 {
+		font-size: 1.85em;
+	}
+
+	footer .contact-form input, textarea {
+		font-size: 0.85em;
+	}
+
+	footer .contact-details .contact-info {
+		position: relative;
+		top: 100px;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+	header img {
+		left:  49%;
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	header nav ul li a {
+		font-size: 0.8em;
+	}
+
+	header h1 {
+		font-size: 4em;
+	}
+
+	header h2 {
+		font-size: 1.75em;
+	}
+
+	.headerbox-left p {
+		font-size: 1em;
+	}
+
+	.about-txt-box p {
+		width: 70%;
+		font-size: 0.75em;
+		line-height: 30px;
+		letter-spacing: 0.04em;
+	}
+
+	.about-txt-box li {
+		font-size: 0.65em;
+		font-weight: bold;
+	}
+
+	footer .contact-details {
+		font-size: 0.85em;
+	}
+
+	footer h3 {
+		font-size: 1.85em;
+	}
+
+	footer .contact-form input, textarea {
+		font-size: 0.85em;
+	}
+
+	footer .contact-details .contact-info {
+		position: relative;
+		top: 100px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+
+	header nav ul {
+		flex-flow: column wrap;
+		align-items: flex-end;
+	}
+
+	header nav ul li a {
+		font-size: 1em;
+	}
+
+	header h1 {
+		font-size: 2.75em;
+		line-height: 1em;
+	}
+
+	header h2 {
+		font-size: 1.5em;
+	}
+
+	.headerbox-left p {
+		font-size: 0.85em;
+	}
+
+	header img {
+		left:  47%;
+		max-width: 180px;
+		max-height: 180px;
+	}
+
+	.cta-txt {
+		font-size: 1.85em;
+	}
+
+	.btn-contact {
+		width: 170px;
+		height: 40px;
+	}
+
+	.btn-cv {
+		width: 170px;
+		height: 40px;
+	}
+
+	.about-txt-box {
+		flex-flow: column nowrap;
+		height: 100%;
+	}
+
+	.about-txt-box ul {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.about-txt-box p {
+		width: 100%;
+		text-align: justify;
+	}
+
+	.about-txt-box .vertical-line {
+		width: 220px;
+		border: 0.25px solid var(--main-color);
+		transform: rotate(180deg);
+	}
+
+	.portfolio-images div {
+		width: 48%;
+	}
+
+	footer {
+		height: 100%;
+	}
+
+	footer .contact-box {
+		flex-flow: column nowrap;
+	}
+
+	footer .contact-details {
+		width: 90%;
+	}
+
+	footer h3 {
+		font-size: 1.5em;
+	}
+
+	footer .contact-form {
+		width: 90%;
+	}
+
+	footer .contact-form input, textarea {
+		font-size: 0.85em;
+	}
+
+	footer .contact-details .contact-info {
+		position: relative;
+		top: 30px;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+
+	header h1 {
+		font-size: 1.75em;
+		line-height: 1em;
+	}
+
+	header h2 {
+		font-size: 1.3em;
+	}
+
+	header {
+		height: 560px;
+		width: 100%;
+		background-image: url('images/header-background.jpg');
+	}
+
+	.headerbox-left p {
+		font-size: 1em;
+	}
+
+	.headerbox-left {
+		position: absolute;
+		padding: 30px;
+		width: 100%;
+		height: 40%;
+		top: 0;
+		background-color: #fff;
+		opacity: .80;
+		box-sizing: border-box;
+	}
+
+	header img {
+		top: 30%;
+		left: 60%;
+		max-height: 150px;
+		max-width: 150px;
+	}
+
+	.headerbox-right {
+		position: absolute;
+		top: 40%;
+		width: 100%;
+		height: 39%;
+		background-color: rgba(44, 136, 203, 0.95);
+		font-weight: bold;
+	}
+
+	.headerbox-right .header-hr {
+		display: none;
+	}
+
+	.headerbox-right .header-useful-links {
+		display: none;
+	}
+
+	header nav {
+		margin-top: 1.875em;
+	}
+
+	header nav ul {
+		flex-flow: column wrap;
+		align-items: flex-start;
+	}
+
+	.cta-txt {
+		font-size: 1.85em;
+	}
+
+	.btn-contact {
+		width: 170px;
+		height: 40px;
+	}
+
+	.btn-cv {
+		width: 170px;
+		height: 40px;
+	}
+
+
+	.skills-box {
+		display: flex;
+		flex-flow: column nowrap;
+		width: 90%;
+	}
+
+	.skills-box .hard-skills-box {
+		height: 350px;
+		width: 100%;
+		float: none;
+	}
+
+	.skills-box .soft-skills-box {
+		height: 350px;
+		width: 100%;
+		float: none;
+	}
+
+	.about-txt-box {
+		flex-flow: column nowrap;
+		padding: 25px 50px;
+		height: 100%;
+	}
+
+	.about-txt-box ul {
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		/*flex-wrap: wrap;*/
+	}
+
+	.about-txt-box p {
+		width: 100%;
+		text-align: justify;
+	}
+
+	.about-txt-box .vertical-line {
+		width: 220px;
+		border: 0.25px solid var(--main-color);
+		transform: rotate(180deg);
+	}
+
+	.portfolio-images div {
+		width: 90%;
+	}
+
+	footer {
+		height: 100%;
+	}
+
+	footer .contact-box {
+		flex-flow: column nowrap;
+	}
+
+	footer .contact-details {
+		width: 100%;
+	}
+
+	footer h3 {
+		font-size: 1.5em;
+	}
+
+	footer .contact-form {
+		width: 100%;
+	}
+
+	footer .contact-form input, textarea {
+		font-size: 0.85em;
+	}
+
+	footer .contact-details .contact-info {
+		position: relative;
+		top: 30px;
+	}
 }
